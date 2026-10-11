@@ -1,0 +1,158 @@
+/* Patient Workspace Styles */
+.patient-ticket-card {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: white;
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.35);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .patient-ticket-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.ticket-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.token-big-badge {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.token-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: #bae6fd;
+}
+
+.token-number {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-top: 0.25rem;
+  color: #ffffff;
+}
+
+.ticket-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.ticket-dept {
+  font-size: 0.85rem;
+  color: #bae6fd;
+  font-weight: 600;
+}
+
+.ticket-patient-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.ticket-doc {
+  font-size: 0.9rem;
+  color: #e0f2fe;
+}
+
+.ticket-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: rgba(15, 23, 42, 0.2);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  min-width: 200px;
+}
+
+.ticket-wait-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+
+.wait-val {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.ticket-step-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  color: #fef08a;
+  font-weight: 600;
+}
+
+/* Patient Prescription Cards */
+.rx-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .rx-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.rx-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rx-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.rx-med-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--slate-900);
+}
+
+.rx-dosage {
+  font-size: 0.875rem;
+  color: var(--primary-700);
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.rx-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+  color: var(--slate-500);
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--slate-100);
+}
